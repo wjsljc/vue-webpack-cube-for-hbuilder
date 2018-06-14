@@ -69,7 +69,7 @@
 
 <script>
   import { webviewMixin } from 'assets/js/mixins'
-  import compress from 'image'
+  // import compress from 'image'
 
   export default {
     mixins: [webviewMixin],
@@ -120,13 +120,13 @@
       },
       processFile (file, next) {
         console.log('processFile')
-        compress(file, {
-          compress: {
-            width: 1600,
-            height: 1600,
-            quality: 0.5
-          }
-        }, next)
+        // compress(file, {
+        //   compress: {
+        //     width: 1600,
+        //     height: 1600,
+        //     quality: 0.5
+        //   }
+        // }, next)
       },
       fileSubmitted (file) {
         console.log('fileSubmitted')
